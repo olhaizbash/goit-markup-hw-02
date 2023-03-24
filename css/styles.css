@@ -3,6 +3,7 @@
     --title-text-colour: #434455;
     --background-color-w: #FFFFFF;
     --logo-color: #4D5AE5;
+    --button-color: #F4F4FD;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -117,7 +118,7 @@ li {
         text-align: center;
         letter-spacing: 0.02em;
 }
-.section-one-index .main-button{
+.main-button {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -191,4 +192,19 @@ header{
 }
 .section-two-title-index{
     color: var(--primary-text-color);
+}
+.btn-filter{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--logo-color);
+    background-color: var(--button-color);
+}
+.btn-filter:hover,
+.btn-filter:focus{
+    color: #FFFFFF;
+    background-color: #404BBF;
+    cursor: pointer;
 }
