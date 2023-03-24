@@ -1,30 +1,39 @@
 :root {
     --primary-text-color: #2E2F42;
     --title-text-colour: #434455;
+    --background-color-w: #FFFFFF;
+    --logo-color: #4D5AE5;
 }
 body{
     font-family: 'Roboto', sans-serif;
-    color: var(--primary-text-color);
+    color: var(--title-text-colour);
+    background-color: var(--background-color-w);
 }
 li {
     list-style-type: none;
 }
+.link{
+        text-decoration: none;
+}
 .logostyle{
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: calc(21/18);
+    line-height: 1.17;
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-decoration: none;
+    color: var(--logo-color);
 }
 .logostyle > span{
-    color: #4D5AE5;
+    color: var(--primary-text-color);
 }
-.navigation li a{
-        text-decoration: none;
+.logostyle .span-footer{
+    color: #F4F4FD;
+}
+.navigation {
+        list-style: none;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -36,7 +45,7 @@ li {
     color: #404BBF;
     text-decoration: underline #404BBF;
 }
-.address a{
+.address .link{
         font-style: normal;
         text-decoration: none;
         font-weight: 400;
@@ -70,23 +79,20 @@ li {
         color: #FFFFFF;
         cursor: pointer;
 }
-.section h3{
+.example-title{
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
 }
-.section p{
+.example-text{
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--title-text-colour);
 }
-.section img{
-    mix-blend-mode: normal;
-}
-footer{
+.footer{
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
@@ -94,21 +100,22 @@ footer{
         color: #F4F4FD;
         background: var(--primary-text-color);
 }
-.section-h1{
+.section-h1-index{
     background: var(--primary-text-color);
     color: #FFFFFF;
 }
-.section-h1 h1{
+.section-h1 .main-title{
     font-weight: 700;
         font-size: 56px;
-        line-height: calc(60/56);
+        line-height: 1.07;
         text-align: center;
         letter-spacing: 0.02em;
 }
-.section-h1 button{
-    font-weight: 500;
+.section-h1-index .main-button{
+        font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
+        font-family: "Roboto", sans-serif;
         display: flex;
         align-items: center;
         letter-spacing: 0.04em;
@@ -118,23 +125,27 @@ footer{
         border-radius: 4px;
         cursor: pointer;
 }
-.section-h2 h3{
+.main-button:hover,
+.main-button:focus{
+background-color: #404BBF;
+}
+.about .about-title{
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
 }
-.section-h2 p{
+.about .about-text{
     font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--title-text-colour);
 }
-.whatdoing h2{
+.whatdoing {
     font-weight: 700;
         font-size: 36px;
-        line-height: calc(40/36);
+        line-height: 1.11;
         text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
@@ -142,10 +153,13 @@ footer{
 .whatdoing img{
     border: 1px solid #E7E9FC;
 }
-.team h2{
+.team{
+    background-color: #F4F4FD;
+}
+.team .team-title{
     font-weight: 700;
         font-size: 36px;
-        line-height: calc(40/36);
+        line-height: 1.11;
         text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
@@ -153,15 +167,15 @@ footer{
 .team img{
     mix-blend-mode: normal;
 }
-.team h3{
+.team .team-h3{
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         text-align: center;
         letter-spacing: 0.02em;
 }
-.team p{
-    font-weight: 400;
+.team .team-text{
+        font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         text-align: center;
