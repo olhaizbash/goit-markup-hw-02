@@ -4,7 +4,7 @@
     --background-color-w: #FFFFFF;
     --logo-color: #4D5AE5;
 }
-body{
+body {
     font-family: 'Roboto', sans-serif;
     color: var(--title-text-colour);
     background-color: var(--background-color-w);
@@ -14,8 +14,9 @@ li {
 }
 .link{
         text-decoration: none;
+        list-style-type: none;
 }
-.logostyle{
+.logostyle {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -26,13 +27,13 @@ li {
     text-transform: uppercase;
     color: var(--logo-color);
 }
-.logostyle > span{
+.logostyle > span {
     color: var(--primary-text-color);
 }
-.logostyle .span-footer{
+.logostyle .span-footer {
     color: #F4F4FD;
 }
-.navigation {
+.list {
         list-style: none;
         font-weight: 500;
         font-size: 16px;
@@ -40,12 +41,16 @@ li {
         letter-spacing: 0.02em;
         color: var(--primary-text-color);
 }
-.navigation li a:hover
-.navigation li a:focus{
+.list .link:hover
+.list .link:focus{
     color: #404BBF;
     text-decoration: underline #404BBF;
 }
-.address .link{
+.address {
+    font-style: normal;
+    list-style: none;
+}
+.address .link {
         font-style: normal;
         text-decoration: none;
         font-weight: 400;
@@ -55,10 +60,10 @@ li {
         color: var(--title-text-colour);
 }
 .address .link:hover
-.address .link:focus{
+.address .link:focus {
     color: #404BBF;
 }
-.filter button{
+.filter .btn-filter {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -70,9 +75,10 @@ li {
         background: #F4F4FD;
             border: 1px solid #E7E9FC;
             border-radius: 4px;
+            font-family: "Roboto", sans-serif;
 }
-.filter button:hover,
-.filter button:focus{
+.filter .btn-filter:hover,
+.filter .btn-filter:focus{
     background: #404BBF;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         border-radius: 4px;
@@ -149,6 +155,7 @@ background-color: #404BBF;
         text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
+        color: var(--primary-text-color);
 }
 .whatdoing img{
     border: 1px solid #E7E9FC;
@@ -163,16 +170,10 @@ background-color: #404BBF;
         text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
+        color: var(--primary-text-color);
 }
 .team img{
     mix-blend-mode: normal;
-}
-.team .team-h3{
-    font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        text-align: center;
-        letter-spacing: 0.02em;
 }
 .team .team-text{
         font-weight: 400;
@@ -184,4 +185,10 @@ background-color: #404BBF;
 }
 header{
     border-bottom: 1px solid #E7E9FC;
+}
+.team-card {
+    background-color: #FFFFFF;
+}
+.example-link{
+    text-decoration: none;
 }
