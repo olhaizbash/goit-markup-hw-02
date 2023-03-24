@@ -54,8 +54,8 @@ li {
         letter-spacing: 0.02em;
         color: var(--title-text-colour);
 }
-.address a:hover
-.address a:focus{
+.address .link:hover
+.address .link:focus{
     color: #404BBF;
 }
 .filter button{
@@ -100,18 +100,18 @@ li {
         color: #F4F4FD;
         background: var(--primary-text-color);
 }
-.section-h1-index{
+.section-one-index{
     background: var(--primary-text-color);
     color: #FFFFFF;
 }
-.section-h1 .main-title{
+.section-one-index .main-title{
     font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
         text-align: center;
         letter-spacing: 0.02em;
 }
-.section-h1-index .main-button{
+.section-one-index .main-button{
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
