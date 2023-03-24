@@ -1,6 +1,10 @@
+:root {
+    --primary-text-color: #2E2F42;
+    --title-text-colour: #434455;
+}
 body{
     font-family: 'Roboto', sans-serif;
-    color: #2E2F42;
+    color: var(--primary-text-color);
 }
 li {
     list-style-type: none;
@@ -9,7 +13,7 @@ li {
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
-    line-height: 21px;
+    line-height: calc(21/18);
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
@@ -23,11 +27,12 @@ li {
         text-decoration: none;
         font-weight: 500;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #2E2F42;
+        color: var(--primary-text-color);
 }
-.navigation li a:hover {
+.navigation li a:hover
+.navigation li a:focus{
     color: #404BBF;
     text-decoration: underline #404BBF;
 }
@@ -36,17 +41,18 @@ li {
         text-decoration: none;
         font-weight: 400;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: var(--title-text-colour);
 }
-.address a:hover{
+.address a:hover
+.address a:focus{
     color: #404BBF;
 }
 .filter button{
         font-weight: 500;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
         display: flex;
         align-items: center;
         text-align: center;
@@ -56,7 +62,8 @@ li {
             border: 1px solid #E7E9FC;
             border-radius: 4px;
 }
-.filter button:hover{
+.filter button:hover,
+.filter button:focus{
     background: #404BBF;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         border-radius: 4px;
@@ -66,43 +73,42 @@ li {
 .section h3{
     font-weight: 500;
         font-size: 20px;
-        line-height: 24px;
+        line-height: 1.2;
         letter-spacing: 0.02em;
 }
 .section p{
         font-weight: 400;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: var(--title-text-colour);
 }
 .section img{
     mix-blend-mode: normal;
 }
 footer{
-        font-family: 'Roboto';
         font-weight: 400;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
         letter-spacing: 0.02em;
         color: #F4F4FD;
-        background: #2E2F42;
+        background: var(--primary-text-color);
 }
 .section-h1{
-    background: #2E2F42;
+    background: var(--primary-text-color);
     color: #FFFFFF;
 }
 .section-h1 h1{
     font-weight: 700;
         font-size: 56px;
-        line-height: 60px;
+        line-height: calc(60/56);
         text-align: center;
         letter-spacing: 0.02em;
 }
 .section-h1 button{
     font-weight: 500;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
         display: flex;
         align-items: center;
         letter-spacing: 0.04em;
@@ -115,20 +121,20 @@ footer{
 .section-h2 h3{
         font-weight: 500;
         font-size: 20px;
-        line-height: 24px;
+        line-height: 1.2;
         letter-spacing: 0.02em;
 }
 .section-h2 p{
     font-weight: 400;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: var(--title-text-colour);
 }
 .whatdoing h2{
     font-weight: 700;
         font-size: 36px;
-        line-height: 40px;
+        line-height: calc(40/36);
         text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
@@ -139,7 +145,7 @@ footer{
 .team h2{
     font-weight: 700;
         font-size: 36px;
-        line-height: 40px;
+        line-height: calc(40/36);
         text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
@@ -150,17 +156,17 @@ footer{
 .team h3{
     font-weight: 500;
         font-size: 20px;
-        line-height: 24px;
+        line-height: 1.2;
         text-align: center;
         letter-spacing: 0.02em;
 }
 .team p{
     font-weight: 400;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
         text-align: center;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: var(--title-text-colour);
 }
 header{
     border-bottom: 1px solid #E7E9FC;
