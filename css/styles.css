@@ -42,8 +42,8 @@ li {
         letter-spacing: 0.02em;
         color: var(--primary-text-color);
 }
-.list .link:hover
-.list .link:focus{
+.link a:hover,
+.link a:focus {
     color: #404BBF;
     text-decoration: underline #404BBF;
 }
@@ -59,10 +59,6 @@ li {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--title-text-colour);
-}
-.address .list .link:hover
-.address .list .link:focus{
-    color: #404BBF;
 }
 .filter .btn-filter {
         font-weight: 500;
@@ -216,4 +212,12 @@ header{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+}
+.list .link-menu:hover,
+.list .link-menu:focus {
+    color: #404bbf;
+}
+.list .link:hover,
+.list .link:focus {
+    color: #404BBF;
 }
