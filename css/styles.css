@@ -61,7 +61,7 @@ li {
         color: var(--title-text-colour);
 }
 .address a:hover
-.address a:focus {
+.address a:focus{
     color: #404BBF;
 }
 .filter .btn-filter {
