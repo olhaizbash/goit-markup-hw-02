@@ -60,8 +60,8 @@ li {
         letter-spacing: 0.02em;
         color: var(--title-text-colour);
 }
-.address a:hover
-.address a:focus{
+.address .list .link:hover
+.address .list .link:focus{
     color: #404BBF;
 }
 .filter .btn-filter {
