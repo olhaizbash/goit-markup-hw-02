@@ -91,6 +91,7 @@ li {
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        color: var(--primary-text-color);
 }
 .example-text{
         font-weight: 400;
@@ -136,13 +137,14 @@ li {
 .main-button:focus{
 background-color: #404BBF;
 }
-.about .about-title{
+.about-title{
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        color: var(--primary-text-color);
 }
-.about .about-text{
+.about-text{
     font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
@@ -166,8 +168,8 @@ background-color: #404BBF;
 }
 .team-title{
     font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
+        font-size: 36px;
+        line-height: 1.11;
         text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
@@ -176,7 +178,7 @@ background-color: #404BBF;
 .team img{
     mix-blend-mode: normal;
 }
-.team .team-text{
+.team-text{
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
